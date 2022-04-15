@@ -1,24 +1,22 @@
 #!/usr/bin/python3
 
-import b2h
-import set
-import fibo
+import team5_pkg
 
 while True:
 	try:
 		sel = int(input('Select menu: 1)b2h 2)set 3)fibo 4)exit ? '))
 	except ValueError:
-		print('Invalid input : enter a number only')
+		print('input is not a number')
 		continue
 	if sel == 1:
-		b2h.run()
+		team5_pkg.b2h_run()
 	elif sel == 2:
-		set.run()
+		team5_pkg.set_run()
 	elif sel == 3:
-		fibo.run()
+		team5_pkg.fibo_run()
 	elif sel == 4:
 		print('exit the program...')
 		break
 	else:
-		print('Invalid menu')
+		print('menu does not exist')
 	print()
