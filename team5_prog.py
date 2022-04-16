@@ -12,8 +12,7 @@ while True:
 		print('not implemented yet')
 		#team5_pkg.b2h_run()
 	elif sel == 2:
-		print('not implemented yet')
-		#team5_pkg.set_run()
+		team5_pkg.set_run()
 	elif sel == 3:
 		team5_pkg.fibo_run()
 	elif sel == 4:
