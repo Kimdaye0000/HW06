@@ -1,10 +1,28 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 print("input the 1st list : ",end='')
-list1=list(input().split())
+
+s1 = set(map(lambda x: int(x), input().split()))
 
 print("input the 2st list : ",end='')
-liar2=list(input().split())
+s2 = set(map(lambda x: int(x), input().split()))
 
-print(list1)
-print(list2)
+u = list(s1 | s2)
+i = list(s1 & s2)
+
+print("union : [",end='')
+if u:
+	for n in range(0, len(u) - 1):
+		print(u[n], end=',')
+	print("%d]" % u[-1])
+else:
+	print("]")
+
+print("intersection : [", end='')
+if i:
+	for n in range(0, len(i) - 1):
+		print(i[n], end=',')
+	print("%d]" % i[-1])
+else:
+	print("]")
+
