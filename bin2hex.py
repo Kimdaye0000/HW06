@@ -5,11 +5,11 @@
 def convertToHex():
     
     checkisB = {'0','1'}
-    num = input()
+    num = input("input bin number : ")
     dedupe = set(num)
     
     if checkisB == dedupe or dedupe == {'0'} or dedupe == {'1'}:
-        print(f'{int(num,2):#010x}')
+        print("hexa number :",f'{int(num,2):#010x}')
         
     else:
         print("wrong input you can input binary only")
