@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!usr/bin/python3
 
 import team5_pkg
 
@@ -9,8 +9,7 @@ while True:
 		print('input is not a number')
 		continue
 	if sel == 1:
-		print('not implemented yet')
-		#team5_pkg.b2h_run()
+		team5_pkg.convertToHex()
 	elif sel == 2:
 		team5_pkg.set_run()
 	elif sel == 3:

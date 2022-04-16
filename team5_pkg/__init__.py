@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-#from .b2h import *
+from .bin2hex import *
 from .set import *
 from .fibo import *
